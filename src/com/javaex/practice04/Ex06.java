@@ -5,7 +5,7 @@ public class Ex06 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char c[] = { 'T', 'H', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'p', 'e', 'n', 'c', 'i', 'l' };
-		char copy[] = new char[16]; // 복사본
+		char copy[] = new char[c.length]; // 복사본
 
 		for (int i = 0; i < c.length; i++) { // 배열 프린트
 			System.out.print(c[i]);
@@ -13,11 +13,14 @@ public class Ex06 {
 		}
 
 		System.out.println(); // 지정 배열값을 덮어씌우 변경
-		copy[4] = ',';
-		copy[7] = ',';
-		copy[9] = ',';
+
 		for (int i = 0; i < c.length; i++) { // 바뀐 배열값을 출력
-			System.out.print(copy[i]);
+			if (c[i] == ' ') {// c[i]가 ' ' 공백일경우
+				copy[i] = ','; // ','변경
+				System.out.print(copy[i]);
+			} else {
+				System.out.print(copy[i]);
+			}
 		}
 	}
 

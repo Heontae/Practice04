@@ -11,11 +11,10 @@ public class Ex08 {
 		int temp = 0; // 빈그릇 생성
 
 		for (int i = 0; i < rotto.length; i++) { // rotto 배열 6개에 1~45숫자 랜덤생성
-			rotto[i] = random.nextInt(44) + 1;
+			rotto[i] = random.nextInt(45) + 1;
 			for (int j = 0; j < i; j++) {
 				if (rotto[i] == rotto[j]) { // 중복검사를해서 중복되면 i값을 -시켜 새로운값 덮어쓰기
-					System.out.println("중복되었습니다.");
-					System.out.println("새롭게 숫자를 배정하겠습니다.");
+					System.out.println("중복된 숫자입니다. \t(" + rotto[i] + ")중복숫자");
 					i--;
 				}
 			}

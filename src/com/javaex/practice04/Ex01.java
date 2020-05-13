@@ -11,7 +11,7 @@ public class Ex01 {
 
 		int result = 0;
 
-		for (int i = 0; i < intArray.length; i++) {// 배열이 3개인데 4번 반복문이라서 *3번으로 수정
+		for (int i = 0; i < intArray.length; i++) {// 배열이 5개인데 length를 선언하면 intArray.length는 5가되는데 <=를 사용하면 6번반복이라 오류
 			result = result + intArray[i];
 		}
 		System.out.println(result);

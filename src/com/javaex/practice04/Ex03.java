@@ -11,7 +11,7 @@ public class Ex03 {
 		intB[0] = 20;
 		intB[2] = 10;
 
-		for (int i = 0; i < intA.length; i++) {
+		for (int i = 0; i < intA.length; i++) { // i <3까지 반복
 			System.out.println(intA[i]);
 		}
 
